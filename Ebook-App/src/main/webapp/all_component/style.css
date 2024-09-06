@@ -1,0 +1,136 @@
+@charset "UTF-8";
+.css-img-index{
+	display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.book-all{
+	-webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.ratings_stars{
+	margin: 0 1px;
+    font-size: 18px;
+    color: #ffd900;
+}
+.ratings_score{
+	font-weight: 600;
+    margin-left: 8px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.css-img-index{
+	text-align: left;
+}
+.book-info{
+	font-family: 'Roboto', sans-serif;
+	padding-left: 20px;
+	font-size: 14px;
+	margin-bottom: auto;
+}
+.book-name{
+	font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+}
+.cont-book{
+	position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word; 
+}
+.css-footer{
+	display: flex;
+    justify-content: space-evenly; /* Căn giữa theo chiều ngang */
+    font-family: Roboto,Arial,sans-serif;
+    text-align: center;
+}
+.footer-title{
+	font-size: 1rem;
+    font-weight: 600;
+}
+.footer-content{
+	font-size: .95rem;
+	color: #677788;
+}
+.social-link{
+	color: #71869d;
+    font-size: 1.2rem;
+    margin-right: 0.3rem
+}
+.text-orders{
+	font-family: OpenSans,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.form-control[readonly],.form-control{
+	padding: 12px!important;
+    border: 1px solid rgba(0,0,0,.255)!important;
+    font-size: 1rem!important;
+    background-color: white!important;
+    font-weight: 500;
+}
+.label-text{
+	font-family: OpenSans,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0;
+}
+.card-checkout{
+	position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+.col_or{
+	font-family: OpenSans,Arial,sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	margin: 0;
+	color: #333;
+}
+
+.btn-center{
+	background-color: transparent!important;
+	color: #666!important;
+    font-weight: 600!important;
+    display: inline-block!important;
+    padding: 5px 15px!important;
+    border: 2px solid #666!important;
+    border-radius: 30px!important;
+    text-decoration: none!important;
+    font-family: Georgia!important;
+    font-weight: 800!important;
+}
+.btn-center:hover{
+	background: #3d4b58!important;
+    color: white!important;
+    text-decoration: none!important;
+}
+

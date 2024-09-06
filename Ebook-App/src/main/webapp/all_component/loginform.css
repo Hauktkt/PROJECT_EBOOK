@@ -1,0 +1,141 @@
+Body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: rgb(217, 218, 223) ;
+  }  
+button {   
+    background: #455a64;   
+    color: white;   
+    margin: auto;
+    margin-top: 20px;
+    width: 340px;
+    height: 40px;
+    border: 2px solid #cfd8dc;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: larger;
+    text-overflow: ellipsis;
+    transition: 0.4s all;
+    display: block;
+
+}   
+
+   
+input[type=text], input[type=password] {
+    margin: auto;
+    padding: 10px;
+    width: 340px;
+    height: 40px;
+    box-sizing: border-box;
+    color: #546e7a;
+    border: 2px solid #cfd8dc;
+    border-radius: 5px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    transition: 0.4s all;
+    display: block;
+}
+
+
+button:hover {   
+    background: black	;
+    border: 1px solid #293037;
+}   
+
+.cancelbtn {   
+    width: auto;   
+    padding: 10px 18px;  
+    margin: 10px 5px;  
+}   
+          
+       
+.container {   
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    /*border-radius: 5px;
+   	background: linear-gradient(to bottom right, #5d92a2 20%, rgb(184, 184, 184));
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 5px solid #eeeeee;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    /*	border-radius: 20px;
+    border: 1px solid #666;*/
+} 
+.cont-css{
+	display: flex;
+	justify-content: center;
+}
+.cont{
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+
+.container_1{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #bdbdbd;
+}
+
+.container_1 a, .container_1 span{
+    color: #546e7a;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.sigh-in-container{
+    max-width: 340px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.sigh-in-container1{
+    -webkit-box-pack: justify;
+    justify-content: center;
+}
+
+.login_logo {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.container_2{
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+}
+.container_2 p{
+    color: #bdbdbd;
+    display: block;
+}
+.div{
+    display: flex;
+    margin: auto;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+.label{
+    display: block;
+    margin: auto;
+}
+.css{
+	width: 400px;
+	height: auto;
+}
+
+.mt-3{
+	margin: 0px;
+}

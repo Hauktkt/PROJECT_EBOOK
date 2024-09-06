@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+img {
+    vertical-align: revert;
+    border-style: none;
+}
+
+.main-nav{
+    background: linear-gradient(to left, #a0afad 0%, #06877b);
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 25px;
+}
+.item-menu li {
+    display: inline-block; /* Hiển thị theo chiều ngang */
+    margin-right: 10px;    /* Khoảng cách giữa các mục */
+}
+
+.item-menu a {
+    text-decoration: none; /* Loại bỏ đường gạch chân mặc định của liên kết */
+    padding: 5px 10px;      /* Thêm padding để làm đẹp */
+    border: 1px solid #ccc; /* Thêm viền để phân biệt giữa các mục */
+    border-radius: 5px;     /* Bo góc */
+    color: #201d1d;    
+    position: relative;
+    transition: color 0.5s ease-in-out;
+    font-family: Georgia;
+    font-weight: 800;
+}
+.item-menu{
+	margin-top: revert;
+}
+
+.item-menu a:hover {
+    color: white;
+}
+
+.item-menu a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px; /* Chiều dài của gạch chân */
+    bottom: 0;
+    left: 0;
+    background-color: white; /* Màu gạch chân */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.item-menu a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.mm-nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+}
+.mm-nav .main-menu{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+.img-nav {
+    /* Di chuyển mm-nav về bên trái */
+    right: auto;
+}
+.main-nav .main-menu{
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    padding-right: 20px;
+}
+.search-main-menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    opacity: 0;
+    height: 0;
+    transform-origin: top;
+    -webkit-transform-origin: top;
+    transition: height 0.2s, visibility 0.2s, opacity 0.2s, transform 0s 0.2s;
+    -webkit-transition: height 0.2s, visibility 0.2s, opacity 0.2s, -webkit-transform 0s 0.2s;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    top: 100%;
+    padding-top: 0;
+    margin-bottom: 0;
+    z-index: 1;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.search-sub-menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    height: 128px;
+    transform-origin: top;
+    -webkit-transform-origin: top;
+    transition: height 0.2s, visibility 0.2s, opacity 0.2s, transform 0s 0.2s;
+    -webkit-transition: height 0.2s, visibility 0.2s, opacity 0.2s, -webkit-transform 0s 0.2s;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    top: 100%;
+    padding-top: 0;
+    margin-bottom: 0;
+    z-index: 1;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    border-bottom: 1px solid #767070;
+}
+
+.search-main-menu .search-field, .search-sub-menu .search-field{
+    flex: 1; /* Tự động mở rộng để chiếm hết không gian còn lại */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #ebebeb;;
+    border-radius: 5px 0 0 5px; /* Góc bo tròn cho phía trái */
+    width: 600px;
+    font-family: Georgia;
+}
+
+.search-main-menu input[type="submit"], .search-sub-menu input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #4b82a0;
+    border-radius: 0 5px 5px 0; /* Góc bo tròn cho phía phải */
+    cursor: pointer;
+    color: #201d1d;
+    transition: background-color 0.5s ease;
+    font-family: Georgia;
+    font-weight: 800;
+    border: 1px solid #293037;
+
+}
+
+.search-main-menu input[type="submit"]:hover, .search-sub-menu input[type="submit"]:hover {
+    background: #3d4b58;
+    color: white;
+    border: 1px solid #293037;
+}
+
+/* Tùy chỉnh kiểu con trỏ */
+.search-main-menu input[type="text"]::placeholder, .search-sub-menu input[type="text"]::placeholder {
+    color: #999;
+    font-size: 13px;
+    font-family: Georgia;
+    font-weight: 800;
+}
+.search-main-menu input[type="text"]:focus, .search-sub-menu input[type="text"]:focus   {
+    border-color: #3d5670; /* Màu viền khi input được focus */
+    outline: none; /* Loại bỏ đường viền xung quanh input khi focus */
+}
+
+.search-open{
+    font-size: 21px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-color: #fff;
+    transition: color 150ms ease-out;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 36px;
+    color: #eb3349;
+}
+
+.search-open {
+    cursor: pointer;
+}
+
+.search-main-menu.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    height: 128px;
+}
+
+.search-open:hover{
+    background: #201d1d;
+}
+
+.nav-bottom{
+    padding: 15px;
+    border-bottom: 1px solid #767070;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.sub-nav_content{
+    margin-right: auto;
+}
+.sub-nav_content_a{
+    font-weight: 600;
+    color: #666;
+    padding: 13px;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: Georgia;
+    font-weight: 800;
+}
+.sub-nav_content_a:hover{
+    color: #e1604d;
+    text-decoration: underline;
+}
+.btn-active-modal{
+    color: white!important;
+    font-weight: 600;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid #666;
+    border-radius: 30px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-family: Georgia;
+    font-weight: 800;
+    background: rgb( 81 94 123 );
+}
+.btn-active-modal:hover{
+    background: #183052;
+    color: white!important;
+    text-decoration: none;
+}
+.fa-2x {
+    display: inline-block; /* Hiển thị theo chiều ngang */
+    color: #4b82a0;
+}
+.fa-2x:hover{
+	color: rgb(168, 46, 0);
+}
+.c-modal_item{
+	display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
